@@ -1,0 +1,23 @@
+<h1>This query selects the average amount paid by the top 5 Rockbuster Stealth LLC customers using Common Table Expression, CTE, 
+to achieve this result.</h1>
+WITH total_amount_paid_by_top_five_customers_cte  (customer_id, first_name, last_name, city, country, total_amount_paid)  AS 
+             (SELECT B.customer_id, B.first_name, B.last_name, D.city, E.country, SUM(A.amount) AS
+              total_amount_paid FROM payment A
+              INNER JOIN customer B ON A.customer_id = B.customer_id
+              INNER JOIN address C ON B.address_id = C.address_id
+              INNER JOIN city D ON C.city_id = D.city_id
+              INNER JOIN country E ON D.country_id = E.country_id
+              WHERE (D.city, E.country) IN (SELECT C.city, D.country FROM customer A
+ INNER JOIN address B ON A.address_id = B.address_id
+ INNER JOIN city C ON B.city_id = C.city_id
+ INNER JOIN country D ON C.country_id = D.country_id
+ WHERE D.country IN (SELECT D.country FROM customer A
+ INNER JOIN address B ON A.address_id = B.address_id
+ INNER JOIN city C ON B.city_id = C.city_id
+ INNER JOIN country D ON C.country_id = D.country_id
+ GROUP BY D.country ORDER BY COUNT(A.customer_id) DESC LIMIT 10)
+               GROUP BY D.country, C.city ORDER BY COUNT(A.customer_id) DESC LIMIT 10)
+               GROUP BY B.customer_id, D.city, E.country, B.first_name, B.last_name ORDER BY           
+               SUM(A.amount)  DESC LIMIT 5)
+SELECT AVG(total_amount_paid) As average_amount_paid_by_top_five_customers;
+FROM total_amount_paid_by_top_five_customers_cte;
