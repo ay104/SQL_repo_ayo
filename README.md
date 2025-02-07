@@ -7,21 +7,21 @@ that answers all RS management board questions using SQL queries.
 
 <h2>Key Questions and Objectives</h2>
 RS Management Board has asked a number of questions requiring data-driven answers that are expected to build into the company's 2020 business strategy. The questions are:
-<list>● Which movies contributed the most/least to revenue gain?
+<l>● Which movies contributed the most/least to revenue gain?
 ● What was the average rental duration for all videos?
 ● Which countries are Rockbuster customers based in?
 ● Where are customers with a high lifetime value based?
-● Do sales fgures vary between geographic regions?</list>
+● Do sales fgures vary between geographic regions?</l>
 
 <h3>Final Analysis Criteria</h3>
 This project will be evaluated by CareeFoundry against the following learning milestones:
-<list>● Ability to write moderately complex SQL queries to answer business questions.
+<l>● Ability to write moderately complex SQL queries to answer business questions.
 ● Presentation of SQL results to business managers by creating visualizations and telling
 a compelling story.
 ● Presentation of SQL results to technical colleagues using Excel and by creating a
 data dictionary.
 ● Creation of a professional project that can be added to professional portfolio and show to
-employers.</list>
+employers.</l>
 
 <h4>Data Set</h4>
 Dataset for this project was provided by CareerFoundry and consists of business records of RS ranging from film inventory, customers, payments, etc.
