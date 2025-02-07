@@ -1,0 +1,17 @@
+This query outputs the rental and rating statistics of RS movies 
+SELECT 				
+    MIN(release_year) AS min_release_year,				
+    MIN(rental_duration) AS min_rental_duration,				
+    MIN(rental_rate) AS min_rental_rate,				
+    MIN(length) AS min_length,				
+    MIN(replacement_cost) AS min_replacement_cost,				
+    MAX(release_year) AS max_release_year,				
+    MAX(rental_duration) AS max_rental_duration,				
+    MAX(rental_rate) AS max_rental_rate,				
+    MAX(length) AS max_length,				
+    MAX(replacement_cost) AS max_replacement_cost,				
+    AVG(replacement_cost) AS avg_replacement_cost,				
+    AVG(rental_duration) AS avg_rental_duration,				
+    AVG(rental_rate) AS avg_rental_rate,				
+    AVG(length) AS avg_length				
+FROM film;				
