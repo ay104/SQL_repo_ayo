@@ -24,4 +24,7 @@ data dictionary.
 employers.</l>
 
 <h4>Data Set</h4>
-Dataset for this project was provided by CareerFoundry and consists of business records of RS ranging from film inventory, customers, payments, etc.
+Dataset for this project was provided by CareerFoundry and consists of business records of RS ranging from film inventory, customers, payments, etc. These datasets were loaded onto the PostgreSQL RDBMS from where SQL queries were executed to pick Rockbuster Stealth existing information for the analyses.
+
+<h5>Link to Tableau for Analyses Visualizations</h5>
+[Visualizations link](https://public.tableau.com/app/profile/ayodeji.oyinloye/viz/RockbusterCustomerGeographyandTotalPayment/HLTVal_customers)
