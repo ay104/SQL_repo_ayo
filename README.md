@@ -7,7 +7,7 @@ that answers all RS management board questions using SQL queries.
 
 <h2>Key Questions and Objectives</h2>
 RS Management Board has asked a number of questions requiring data-driven answers that are expected to build into the company's 2020 business strategy. The questions are:
-<l>● Which movies contributed the most/least to revenue gain?
+- Which movies contributed the most/least to revenue gain?
 - What was the average rental duration for all videos?
 - Which countries are Rockbuster customers based in?
 - Where are customers with a high lifetime value based?
